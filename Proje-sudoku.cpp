@@ -64,7 +64,7 @@ int main()
             
             for(int i=0;i<9;i++)
             {
-              sudokuTable[j][ showrows[0] ] = matris[j][ showrows[0] ];//matrisin g�sterilecekSatirlar eleman�n�, sudoku tablosuna at�m. sadece, g�sterilenleri o tabloya koydum
+              sudokuTable[j][ showrows[0] ] = matris[j][ showrows[0] ];// Rows that will be shown
               
               sudokuTable[j][ showrows[1] ] = matris[j][ showrows[1] ];
               sudokuTable[j][ showrows[2] ] = matris[j][ showrows[2] ];

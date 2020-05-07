@@ -21,9 +21,11 @@ int matris[9][9] ={    {1,2,3,4,5,6,7,8,9},//Creating Matrix List for
                        
 int sudokuTable[9][9]={{0}};//The Sudoku Table That will be used
 //to being filled my declared matrix randomly we assigned to empty list
-bool matriscontrol( int _matris[9][9], int newvalue, int i, int j); // A function named kontrol created as bool
+bool matriscontrol( int _matris[9][9], int newvalue, int i, int j); // A function named control created as bool
+//It will be controlling that whether given coordinates has been taken,empty or full,or not and also a comparation
+//between given new value and and current position is possible
 
-void mix( void ); //Karistir Function was designed to mix the elemant of the matrix
+void mix( void ); // Function was designed to mix the elements of the matrix
 
 int main()
 {
@@ -47,7 +49,7 @@ int main()
                         //Which are different in each other
 
     
-            int showrows[3];//Gosterileceksatir is used 
+            int showrows[3];            //Showrow is used 
                                         //to show the row that was selected
                                         //at the first time
    
@@ -91,7 +93,7 @@ int main()
                     }
                     else
                     {
-                        printf("  | "); // Zeros was not printed spaces was.
+                        printf("  | "); // Zeros were not printed but spaces were.
                     }
             }
         
